@@ -61,8 +61,22 @@ TBLPROPERTIES ('kudu.num_tablet_replicas' = '1');
 
 ```
 
+実行したら、以下のポイントを確認します。
+
+![](screenshots/SQL_confirm.png "")
+
+以上で、３つのテーブルのうち「sensors」（全件格納用テーブル）が作成できました。
+
 ### SQLの実行（sensors_normal, sensors_abnormal テーブルの作成）
 
+次は、同じ構造でさらに２つのテーブルを作成します。
 SQLの「CREATE TABLE」以下を sensors_normal, sensors_abnormal に変えて、それぞれ実行します。
 
 ![](screenshots/change_SQL.png "")
+
+実行し終わったら、以下を確認します。
+
+![](screenshots/SQL_confirm2.png "")
+
+これで、テーブルの作成は完了です。
+次は、xxxの手順に進みます。
