@@ -26,22 +26,22 @@ IoTのデータの最終的な格納先となるDWHのテーブルを作成し�
 
 トップページから、「Hue」をクリックして開きます。
 
-![](screenshots/Hue_open.png "")
+![](screenshots_lab01/Hue_open.png "")
 
 ### impalaを選択
 
 開いた画面の左上の </> マークから「impala」を選択します。
 
-![](screenshots/select_impala.png "")
+![](screenshots_lab01/select_impala.png "")
 
 以下の赤枠の箇所が「impala」になっていることを確認します。
-![](screenshots/impala_selected.png "")
+![](screenshots_lab01/impala_selected.png "")
 
 ### SQLの実行（sensorsテーブルの作成）
 
 以下のSQL を入力し、実行します。
 
-![](screenshots/SQL.png "")
+![](screenshots_lab01/SQL.png "")
 
 ↓コピペ用SQL↓
 ```commandline
@@ -63,7 +63,7 @@ TBLPROPERTIES ('kudu.num_tablet_replicas' = '1');
 
 実行したら、以下のポイントを確認します。
 
-![](screenshots/SQL_confirm.png "")
+![](screenshots_lab01/SQL_confirm.png "")
 
 以上で、３つのテーブルのうち「sensors」（全件格納用テーブル）が作成できました。
 
@@ -72,11 +72,11 @@ TBLPROPERTIES ('kudu.num_tablet_replicas' = '1');
 次は、同じ構造でさらに２つのテーブルを作成します。
 SQLの「CREATE TABLE」以下を sensors_normal, sensors_abnormal に変えて、それぞれ実行します。
 
-![](screenshots/change_SQL.png "")
+![](screenshots_lab01/change_SQL.png "")
 
 実行し終わったら、以下を確認します。
 
-![](screenshots/SQL_confirm2.png "")
+![](screenshots_lab01/SQL_confirm2.png "")
 
-これで、テーブルの作成は完了です。
-次は、xxxの手順に進みます。
+以上で、テーブルの作成は完了です。
+次は、[ステップ２：スキーマレジストリの作成](lab02_create_schema.md)に進みます。
