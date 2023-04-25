@@ -6,6 +6,12 @@
 
 このステップでは、まずはNiFiを使って「端末からデータを収集する」部分の準備を行います。
 
+以下の３つの手順でやっていきます。
+
+- 手順(1) 準備＆NiFiを動かす練習
+- 手順(2) コントローラーサービスの設定
+- 手順(3) 端末からのデータ入力ポートのID取得
+
 ## 手順(1) - 準備
 
 ### 画面を開く
@@ -119,10 +125,69 @@
 以下のように、表の「State」が「Enabled」になっていれば完了です。
 ![enabled_tree.png](screenshots_lab03%2Fenabled_tree.png)
 
-
 ### JsonRecordSetWriter の設定
 
+#### サービス追加・プロパティ設定
 
+画面右側の「＋」マークをクリックし、出てきた画面の検索窓に「json」と入力します。<br>
+いくつかのサービスが表示される中から、「JsonTreeReader」を選択します。
+![JsonRecordSetWriter.png](screenshots_lab03%2FJsonRecordSetWriter.png)
 
-以上で、xxは完了です。
-次は、[ステップx：xx](lab03_NiFi1.md)に進みます。
+画面右側の歯車のマークをクリックし、出てきた画面の「PROPERTIES」タブを以下の要領で設定します。
+
+設定内容：　※前の手順と同様、入力欄をダブルクリックすると選択肢のリストが出てきます
+- Schema Write Strategy
+  - HWX Schema Reference Attributes
+- Schema Access Strategy
+  - Use 'Schema Name' Property
+- Schema Registry
+  - HortonworksSchemaRegistry
+
+![SetWriter_settings.png](screenshots_lab03%2FSetWriter_settings.png)
+
+選択できたら、「APPLY」をクリックします。
+
+#### 有効化
+
+いま作成したJsonRecordSetWriterのサービスを有効化します。<br>
+（手順はHortonworksSchemaRegistryを作成した際の「有効化」の手順を参照）
+
+以下のように、表の「State」が「Enabled」になっていれば完了です。
+![enabled_setwriter.png](screenshots_lab03%2Fenabled_setwriter.png)
+
+### Controller Service の確認
+
+下図のポイントを確認したら、×をクリックして NiFi Settings の画面を閉じます。
+![close_settings.png](screenshots_lab03%2Fclose_settings.png)
+
+以上で、コントローラーサービス の設定は完了です。
+
+## 手順(3) 端末からのデータ入力ポートのID取得
+
+このステップの最後に行うのは、「端末からのデータ入力ポートのID取得」です。
+端末からのデータ収集にあたり、端末側がデータを送信する際の送信先となるIDを取得します。
+
+### 入力ポートの追加
+
+NiFiの画面上部より、Input Port のマーク（下図参照）を選択し、フィールドの任意の位置にドラッグ＆ドロップします。
+
+![input_port_drug.png](screenshots_lab03%2Finput_port_drug.png)
+
+名前を設定します。入力内容は任意ですが、ここでは「端末データ取得」と入力しADDをクリックします。
+
+![input_port_name.png](screenshots_lab03%2Finput_port_name.png)
+
+以下のように、入力ポートのアイコンがフィールド上に表示されればOKです。
+![input_port_added.png](screenshots_lab03%2Finput_port_added.png)
+
+※ 名前を変更したい場合は、上記のアイコンをダブルクリックすることで変更できます。
+
+### IDの取得
+
+今追加した入力ポートのアイコンをダブルクリックし、詳細設定のポップアップを起動します。<br>
+出てきた画面の「Id」をコピーし、メモ帳などに貼り付けておきます。
+
+![input_port_get_id.png](screenshots_lab03%2Finput_port_get_id.png)
+
+以上で、NiFiの準備①は完了です。
+次は、[「ステップ４：端末からのデータ送信の仕組みを作る」](lab04_create_EdgeFlowManagement.md)に進みます。
