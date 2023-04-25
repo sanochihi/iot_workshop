@@ -191,3 +191,5 @@ NiFiの画面上部より、Input Port のマーク（下図参照）を選択�
 
 以上で、NiFiの準備①は完了です。
 次は、[「ステップ４：端末からのデータ送信の仕組みを作る」](lab04_create_EdgeFlowManagement.md)に進みます。
+
+[>>トップページに戻る<<](lab00_top.md)

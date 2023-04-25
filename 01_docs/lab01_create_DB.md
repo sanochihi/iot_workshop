@@ -88,3 +88,5 @@ SQLの「CREATE TABLE」以下を sensors_normal, sensors_abnormal に変えて�
 以上で、テーブルの作成は完了です。
 
 次は、[「ステップ２：スキーマレジストリの作成」](lab02_create_schema.md)に進みます。
+
+[>>トップページに戻る<<](lab00_top.md)
