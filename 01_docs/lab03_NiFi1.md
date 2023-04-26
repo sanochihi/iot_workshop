@@ -159,14 +159,21 @@ NiFiの画面上部より、Input Port のマーク（下図参照）を選択�
 
 ![input_port_drug.png](screenshots_lab03%2Finput_port_drug.png)
 
-名前を設定します。入力内容は任意ですが、ここでは「端末データ取得」と入力しADDをクリックします。
+出てくる画面で、以下の項目を設定します。（下図参照）
+
+- Input Port Name
+  - 任意の内容を入力します。「端末データ取得」などがわかりやすいでしょう。
+- Receive From
+  - 選択肢の中から、「Remote connections(site-to-site)」を選択します。
+
+設定できたら「ADD」をクリックします。
 
 ![input_port_name.png](screenshots_lab03%2Finput_port_name.png)
 
 以下のように、入力ポートのアイコンがフィールド上に表示されればOKです。
 ![input_port_added.png](screenshots_lab03%2Finput_port_added.png)
 
-※ 名前を変更したい場合は、上記のアイコンをダブルクリックすることで変更できます。
+※ 名前や設定内容を変更したい場合は、上記のアイコンをダブルクリックすることで変更できます。
 
 ### IDの取得
 
@@ -174,6 +181,8 @@ NiFiの画面上部より、Input Port のマーク（下図参照）を選択�
 出てきた画面の「Id」をコピーし、メモ帳などに貼り付けておきます。
 
 ![input_port_get_id.png](screenshots_lab03%2Finput_port_get_id.png)
+
+終わったら、「CANCEL」または「APPLY」をクリックして画面を閉じます。
 
 以上で、NiFiの準備①は完了です。
 次は、[「ステップ４：端末からのデータ送信の仕組みを作る」](lab04_create_EdgeFlowManagement.md)に進みます。
