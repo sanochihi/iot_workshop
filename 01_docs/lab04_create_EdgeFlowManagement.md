@@ -12,11 +12,11 @@
 
 ### 画面を開く
 
-トップページから、「」をクリックして開きます。
+トップページから、「Edge Flow Manager」をクリックして開きます。
 
-![](screenshots_lab02/open.png "")
+![open_efm.png](screenshots_lab04%2Fopen_efm.png)
 
-画面左側の田の字のようなマークをクリックします。「iot-1」というクラスがすでにできているので、選択し、「OPEN」をクリックします。
+出てきた画面で、左側の田の字のようなマークをクリックします。「iot-1」というクラスが既に作成されているので、選択し、「OPEN」をクリックします。
 
 ![open.png](screenshots_lab04%2Fopen.png)
 

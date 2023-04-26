@@ -49,18 +49,26 @@
 
 以下がその手順です。
 
+### プロセスグループの作成
+
+画面上部のアイコンから、「Process Group」（左から４つめ）を選択し、フィールド上の任意の場所にドラッグ＆ドロップします。
+![process_group.png](screenshots_lab03%2Fprocess_group.png)
+
+以下のようなポップアップが表示されます。<br>
+わかりやすい任意の名前（例：サーバ処理）をつけて「ADD」をクリックします。
+![name_process_group.png](screenshots_lab03%2Fname_process_group.png)
+
 ### 設定画面を開く
 
-画面右上の三本線のマークをクリックし、配下の「Controller Settings」を選択します。
+今作成したプロセスグループを右クリックし、出てくるメニューから「Configure」を選択します。
 
-![](screenshots_lab03/humberger.png "")
+![right_click.png](screenshots_lab03%2Fright_click.png)
 
 ### スキーマレジストリの定義（HortonworksSchemaRegistry）
 
 #### 新規コントローラーサービスの追加
 
-「MANAGEMENT CONTROLLER SERVICES」タブを選択し、画面右側の「＋」マークをクリックします。
-
+「CONTROLLER SERVICES」タブを選択し、画面右側の「＋」マークをクリックします。
 ![tab_new.png](screenshots_lab03%2Ftab_new.png)
 
 以下の画面で、検索窓に`hort`と入れると、「HortonworksSchemaRegistry」が絞り込み表示されます。<br>
@@ -125,36 +133,6 @@
 以下のように、表の「State」が「Enabled」になっていれば完了です。
 ![enabled_tree.png](screenshots_lab03%2Fenabled_tree.png)
 
-### JsonRecordSetWriter の設定
-
-#### サービス追加・プロパティ設定
-
-画面右側の「＋」マークをクリックし、出てきた画面の検索窓に「json」と入力します。<br>
-いくつかのサービスが表示される中から、「JsonTreeReader」を選択します。
-![JsonRecordSetWriter.png](screenshots_lab03%2FJsonRecordSetWriter.png)
-
-画面右側の歯車のマークをクリックし、出てきた画面の「PROPERTIES」タブを以下の要領で設定します。
-
-設定内容：　※前の手順と同様、入力欄をダブルクリックすると選択肢のリストが出てきます
-- Schema Write Strategy
-  - HWX Schema Reference Attributes
-- Schema Access Strategy
-  - Use 'Schema Name' Property
-- Schema Registry
-  - HortonworksSchemaRegistry
-
-![SetWriter_settings.png](screenshots_lab03%2FSetWriter_settings.png)
-
-選択できたら、「APPLY」をクリックします。
-
-#### 有効化
-
-いま作成したJsonRecordSetWriterのサービスを有効化します。<br>
-（手順はHortonworksSchemaRegistryを作成した際の「有効化」の手順を参照）
-
-以下のように、表の「State」が「Enabled」になっていれば完了です。
-![enabled_setwriter.png](screenshots_lab03%2Fenabled_setwriter.png)
-
 ### Controller Service の確認
 
 下図のポイントを確認したら、×をクリックして NiFi Settings の画面を閉じます。
@@ -166,6 +144,14 @@
 
 このステップの最後に行うのは、「端末からのデータ入力ポートのID取得」です。
 端末からのデータ収集にあたり、端末側がデータを送信する際の送信先となるIDを取得します。
+
+### プロセスグループに入る
+
+先ほど作成した「サーバ処理」のプロセスグループを、ダブルクリックして中に入ります。
+![double_click.png](screenshots_lab03%2Fdouble_click.png)
+
+画面の左下に、以下のようなパンくずリストが表示されていれば中に入れています。
+![bread_crump.png](screenshots_lab03%2Fbread_crump.png)
 
 ### 入力ポートの追加
 
