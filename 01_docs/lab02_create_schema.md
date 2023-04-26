@@ -90,6 +90,6 @@ Cloudera プラットフォームの中で、そうした「データ構造の�
 ![schema_complete.png](screenshots_lab02%2Fschema_complete.png)
 
 以上で、スキーマレジストリの作成は完了です。
-次は、[「ステップ３：NiFiの準備①」](lab03_NiFi1.md)に進みます。
+次は、[「ステップ３：NiFiの準備」](lab03_NiFi1.md)に進みます。
 
 [>>トップページに戻る<<](lab00_top.md)

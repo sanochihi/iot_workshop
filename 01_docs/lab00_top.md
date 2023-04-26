@@ -10,14 +10,14 @@
 
 [ステップ２：スキーマレジストリの作成](lab02_create_schema.md)
 
-[ステップ３：NiFiの準備①](lab03_NiFi1.md)
+[ステップ３：NiFiの準備](lab03_NiFi1.md)
 
 [ステップ４：端末からのデータ送信の仕組みを作る](lab04_create_EdgeFlowManagement.md)
 
-[ステップ５：NiFiの準備②](lab05_NiFi2.md)
+[ステップ５：NiFiの完成](lab05_NiFi2.md)
 
-[ステップ６：データのクエリ](lab06_query_DB.md)
+[ステップ６；NiFiの実行](lab06_Nifi3.md)
 
-[ステップ７（応用）：データの振り分け](lab07_bonus.md)
+[ステップ７：データのクエリ](lab07_query_DB.md)
 
 ご不明な点は、遠慮なく講師にご質問ください。
