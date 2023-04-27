@@ -2,7 +2,7 @@
 
 ## このステップで行うこと
 
-IoTのデータの最終的な格納先となるDWHのテーブルを作成します。
+データの最終的な格納先となる、DWHのテーブルを作成します。
 
 ## 手順
 
@@ -15,6 +15,7 @@ IoTのデータの最終的な格納先となるDWHのテーブルを作成し�
 以下の画面で、管理者ユーザーのユーザー名とパスワードを設定します。（Hueでは、初回ログイン時に設定したユーザー名とパスワードが、そのまま管理者ユーザーのユーザー名とパスワードになります。）
 
 ユーザー名、パスワードともに`admin`と入力し「アカウントを作成」をクリックします。
+
 ![Hue_1stLogin.png](screenshots_lab01%2FHue_1stLogin.png)
 
 ### impalaを選択
@@ -24,6 +25,7 @@ IoTのデータの最終的な格納先となるDWHのテーブルを作成し�
 ![](screenshots_lab01/select_impala.png "")
 
 以下の赤枠の箇所が「impala」になっていることを確認します。
+
 ![](screenshots_lab01/impala_selected.png "")
 
 ### SQLの実行①（sensorsテーブルの作成）
@@ -91,4 +93,4 @@ SQLの「CREATE TABLE」以下を sensors_normal, sensors_abnormal に変えて�
 
 次は、[「ステップ２：スキーマレジストリの作成」](lab02_create_schema.md)に進みます。
 
-[>>トップページに戻る<<](lab00_top.md)
+[>>トップページに戻る<<](00_top.md)

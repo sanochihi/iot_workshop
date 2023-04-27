@@ -20,6 +20,7 @@
 ![](screenshots_lab01/select_impala.png "")
 
 以下の赤枠の箇所が「impala」になっていることを確認します。
+
 ![](screenshots_lab01/impala_selected.png "")
 
 ### DB のクエリ
@@ -46,4 +47,4 @@
 
 その他、SQLを色々と変えて、データを抽出してみましょう。
 
-[>>トップページに戻る<<](lab00_top.md)
+[>>トップページに戻る<<](00_top.md)

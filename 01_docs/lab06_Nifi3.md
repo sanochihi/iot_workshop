@@ -11,6 +11,7 @@
 ### 状態の確認
 
 画面上で、以下のポイントを確認します。
+
 ![confirm.png](screenshots_lab06%2Fconfirm.png)
 
 それぞれのマークの意味は以下のとおりです。
@@ -29,6 +30,7 @@
 ![click_NiFi_Flow.png](screenshots_lab06%2Fclick_NiFi_Flow.png)
 
 このような画面になっていればOKです。
+
 ![NiFi_top.png](screenshots_lab06%2FNiFi_top.png)
 
 トップ画面から実行することで、配下の全プロセスを同時に実行することができます。
@@ -66,4 +68,4 @@
 次は、[ステップ７：データのクエリ](lab07_query_DB.md)に進みます。
 
 
-[>>トップページに戻る<<](lab00_top.md)
+[>>トップページに戻る<<](00_top.md)

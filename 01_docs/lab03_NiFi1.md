@@ -8,7 +8,7 @@
 
 以下の３つの手順でやっていきます。
 
-- 手順(1) 準備＆NiFiを動かす練習
+- 手順(1) 準備
 - 手順(2) コントローラーサービスの設定
 - 手順(3) 端末からのデータ入力ポートのID取得
 
@@ -19,21 +19,6 @@
 トップページから、「NiFi」をクリックして開きます。
 
 ![](screenshots_lab03/open_NiFi.png "")
-
-### NiFi を動かす練習
-
-以下のような画面が起動します。
-![](screenshots_lab03/NiFi_top.png "")
-
-上記の画面のように、「シミュレーターを起動」という箱がひとつだけ表示されていれば想定どおりです。
-
-この箱のことを、NiFiでは「プロセッサー」と呼びます。
-
-ハンズオンでは、まずこのプロセッサーを使って、NiFi のプロセッサーを動かしたり、状態を確認する練習を行います。
-
-練習の方法は、講師より説明します。
-
-（演習が早く終わってしまった方は、練習を飛ばして次の手順に進んでも大丈夫です）
 
 ## 手順(2) - コントローラーサービスの設定
 
@@ -52,10 +37,12 @@
 ### プロセスグループの作成
 
 画面上部のアイコンから、「Process Group」（左から４つめ）を選択し、フィールド上の任意の場所にドラッグ＆ドロップします。
+
 ![process_group.png](screenshots_lab03%2Fprocess_group.png)
 
 以下のようなポップアップが表示されます。<br>
 わかりやすい任意の名前（例：サーバ処理）をつけて「ADD」をクリックします。
+
 ![name_process_group.png](screenshots_lab03%2Fname_process_group.png)
 
 ### 設定画面を開く
@@ -73,9 +60,11 @@
 
 以下の画面で、検索窓に`hort`と入れると、「HortonworksSchemaRegistry」が絞り込み表示されます。<br>
 この状態で、「ADD」をクリックします。
+
 ![horton.png](screenshots_lab03%2Fhorton.png)
 
 すると、表にHortonworksSchemaRegistryの行が表示されますので、右側の歯車マークをクリックします。
+
 ![gear.png](screenshots_lab03%2Fgear.png)
 
 #### プロパティ設定
@@ -94,13 +83,16 @@
 今作成したスキーマレジストリの定義を有効化します。
 
 画面の右側にある稲妻マークをクリックし、出てきた画面で「ENABLE」をクリックします。
+
 ![enable.png](screenshots_lab03%2Fenable.png)
 
 しばらく待つと、「Enabling this controller service」の横にチェックマークが表示されます。<br>
 「CLOSE」をクリックします。
+
 ![close.png](screenshots_lab03%2Fclose.png)
 
 以下のように、表の「State」が「Enabled」になっていれば完了です。
+
 ![enabled.png](screenshots_lab03%2Fenabled.png)
 
 以上で、先ほど設定したスキーマレジストリを使う準備ができました。次は、このスキーマレジストリを使ってデータを読み書きするための準備をします。
@@ -131,11 +123,13 @@
 （手順はHortonworksSchemaRegistryを作成した際の「有効化」の手順を参照）
 
 以下のように、表の「State」が「Enabled」になっていれば完了です。
+
 ![enabled_tree.png](screenshots_lab03%2Fenabled_tree.png)
 
 ### Controller Service の確認
 
 下図のポイントを確認したら、×をクリックして NiFi Settings の画面を閉じます。
+
 ![close_settings.png](screenshots_lab03%2Fclose_settings.png)
 
 以上で、コントローラーサービス の設定は完了です。
@@ -148,9 +142,11 @@
 ### プロセスグループに入る
 
 先ほど作成した「サーバ処理」のプロセスグループを、ダブルクリックして中に入ります。
+
 ![double_click.png](screenshots_lab03%2Fdouble_click.png)
 
 画面の左下に、以下のようなパンくずリストが表示されていれば中に入れています。
+
 ![bread_crump.png](screenshots_lab03%2Fbread_crump.png)
 
 ### 入力ポートの追加
@@ -171,6 +167,7 @@ NiFiの画面上部より、Input Port のマーク（下図参照）を選択�
 ![input_port_name.png](screenshots_lab03%2Finput_port_name.png)
 
 以下のように、入力ポートのアイコンがフィールド上に表示されればOKです。
+
 ![input_port_added.png](screenshots_lab03%2Finput_port_added.png)
 
 ※ 名前や設定内容を変更したい場合は、上記のアイコンをダブルクリックすることで変更できます。
@@ -187,4 +184,4 @@ NiFiの画面上部より、Input Port のマーク（下図参照）を選択�
 以上で、NiFiの準備は完了です。
 次は、[「ステップ４：端末からのデータ送信の仕組みを作る」](lab04_create_EdgeFlowManagement.md)に進みます。
 
-[>>トップページに戻る<<](lab00_top.md)
+[>>トップページに戻る<<](00_top.md)

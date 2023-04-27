@@ -16,7 +16,7 @@
 
 [ステップ５：NiFiの完成](lab05_NiFi2.md)
 
-[ステップ６；NiFiの実行](lab06_Nifi3.md)
+[ステップ６：NiFiの実行](lab06_Nifi3.md)
 
 [ステップ７：データのクエリ](lab07_query_DB.md)
 

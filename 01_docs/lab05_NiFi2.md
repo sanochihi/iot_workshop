@@ -15,6 +15,7 @@
 ![open_NiFi.png](screenshots_lab05%2Fopen_NiFi.png)
 
 「サーバ処理」のプロセスグループをダブルクリックし、中に入ります。
+
 ![double_click.png](screenshots_lab05%2Fdouble_click.png)
 
 
@@ -41,9 +42,11 @@
 
 PROPERTIES タブを選択し、右側の＋マークをクリックします。<br>
 出てきた画面の「Property Name」に`schema.name`と入力し「OK」をクリックします。
+
 ![properties.png](screenshots_lab05%2Fproperties.png)
 
 さらに入力欄が表示されるので、`SensorData`と入力し「OK」をクリックします。
+
 ![SensorData.png](screenshots_lab05%2FSensorData.png)
 
 以下のポイントを確認し、「APPLY」をクリックします。<br>
@@ -77,12 +80,14 @@ PROPERTIES タブを選択し、右側の＋マークをクリックします。
 
 すると、プロセッサーの種類を選択する画面が起動します。<br>
 右上の検索窓に`putku`まで入力すると、「putKudu」が絞り込み表示されますので、この状態で「ADD」をクリックします。
+
 ![putkudu.png](screenshots_lab05%2Fputkudu.png)
 
 #### プロセッサーの詳細設定
 
 今作成したプロセッサをダブルクリックし、出てきた画面で「PROPERTIES」タブを選択します。<br>
 プロパティの内容を、以下のとおり設定します。（詳細説明は図の下に記載）
+
 ![set_kudu_properties.png](screenshots_lab05%2Fset_kudu_properties.png)
 
 - Kudu Masters : 接続先のホスト選択
@@ -113,4 +118,4 @@ PROPERTIES タブを選択し、右側の＋マークをクリックします。
 
 次は、[NiFiの実行](lab07_query_DB.md)に進みます。
 
-[>>トップページに戻る<<](lab00_top.md)
+[>>トップページに戻る<<](00_top.md)
