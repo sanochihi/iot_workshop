@@ -85,7 +85,7 @@
 ![enable.png](screenshots_lab03%2Fenable.png)
 
 しばらく待つと、「Enabling this controller service」の横にチェックマークが表示されます。<br>
-「CLOSE」をクリックします。
+この状態で、「CLOSE」をクリックします。
 
 ![close.png](screenshots_lab03%2Fclose.png)
 
@@ -93,7 +93,8 @@
 
 ![enabled.png](screenshots_lab03%2Fenabled.png)
 
-以上で、先ほど設定したスキーマレジストリを使う準備ができました。次は、このスキーマレジストリを使ってデータを読み書きするための準備をします。
+以上で、先ほど設定したスキーマレジストリを使う準備ができました。<br>
+次は、このスキーマレジストリを使ってデータを読み込むための準備をします。
 
 ### JsonTreeReader の設定
 
