@@ -39,7 +39,7 @@ Consume MQTT プロセッサーにカーソルを当てると、以下のよう�
 ※両端にスペースなどが含まれていると、保存の際にエラーが出ます。スペースが含まれていないことを確認しましょう。
 ![setId.png](screenshots_lab04%2FsetId.png)
 
-今追加されたリレーションの真ん中の四角をダブルクリックし、設定画面を開きます。<br>
+今追加された矢印の真ん中の四角をダブルクリックし、設定画面を開きます。<br>
 FLOWFILE EXPIRATION を 60 seconds に設定し、「APPLY」をクリックします。
 
 ![configure_relation.png](screenshots_lab04%2Fconfigure_relation.png)
