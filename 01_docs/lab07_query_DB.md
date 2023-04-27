@@ -25,7 +25,8 @@
 
 ### DB のクエリ
 
-クエリに`select * from sensors`と入力し、実行してみましょう。
+クエリに以下のSQLを入力し、実行してみましょう。
+`select * from sensors order by date_time desc, lot_no asc`
 
 ![run_query.png](screenshots_lab07%2Frun_query.png)
 
@@ -33,7 +34,7 @@
 
 ![query_result.png](screenshots_lab07%2Fquery_result.png)
 
-以上で、基本編は完了です。おつかれさまでした！
+以上で、演習は完了です。おつかれさまでした！
 
 ### おまけの演習(早く終わった方向け)
 
