@@ -60,7 +60,8 @@
 
 ![horton.png](screenshots_lab03%2Fhorton.png)
 
-すると、表にHortonworksSchemaRegistryの行が表示されますので、右側の歯車マークをクリックします。
+すると、表にHortonworksSchemaRegistryの行が表示されます。<br>
+さらに詳細を設定するため、右側の歯車マークをクリックします。
 
 ![gear.png](screenshots_lab03%2Fgear.png)
 
