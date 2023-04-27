@@ -34,7 +34,7 @@ Consume MQTT プロセッサーにカーソルを当てると、以下のよう�
 ![drug_relation1.png](screenshots_lab04%2Fdrug_relation1.png)
 
 
-以下の画面が表示されますので、[ステップ３](lab03_NiFi1.md)の手順(3)でコピーしておいたポートのIDをペーストし「CREATE」をクリックします。
+以下の画面が表示されますので、[ステップ３](lab03_NiFi1.md)の手順(2)でコピーしておいたポートのIDをペーストし「CREATE」をクリックします。
 
 ![setId.png](screenshots_lab04%2FsetId.png)
 
