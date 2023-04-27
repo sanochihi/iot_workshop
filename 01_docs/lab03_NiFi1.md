@@ -53,6 +53,7 @@
 #### 新規コントローラーサービスの追加
 
 「CONTROLLER SERVICES」タブを選択し、画面右側の「＋」マークをクリックします。
+
 ![tab_new.png](screenshots_lab03%2Ftab_new.png)
 
 以下の画面で、検索窓に`hort`と入れると、「HortonworksSchemaRegistry」が絞り込み表示されます。<br>
@@ -100,6 +101,7 @@
 
 画面右側の「＋」マークをクリックし、出てきた画面の検索窓に「json」と入力します。<br>
 いくつかのサービスが表示される中から、「JsonTreeReader」を選択します。
+
 ![JsonTreeReader.png](screenshots_lab03%2FJsonTreeReader.png)
 
 画面右側の歯車のマークをクリックし、出てきた画面の「PROPERTIES」タブを以下の要領で設定します。
