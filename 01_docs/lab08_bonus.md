@@ -10,6 +10,33 @@
 
 ## 手順
 
+
+### （応用編）SQLの実行②（sensors_normal, sensors_abnormal テーブルの作成）
+
+#### 実施すること
+
+応用編では、さらに２つのテーブルを作成します。
+
+先ほど作成した`sensors`と同じ構造で、以下のテーブルを作成します。
+
+- sensors_normal
+  - センサーのデータのうち、正常データのみを格納するためのテーブル
+
+- sensors_abnormal
+  - センサーのデータのうち、異常データのみを格納するためのテーブル
+
+#### 実施内容
+
+SQLの「CREATE TABLE」以下を sensors_normal, sensors_abnormal に変えて、それぞれ実行します。
+
+![](screenshots_lab01/change_SQL.png "")
+
+実行し終わったら、以下を確認します。
+
+![](screenshots_lab01/SQL_confirm2.png "")
+
+以上で、テーブルの作成は完了です。
+
 ### 画面を開く
 
 
