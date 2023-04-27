@@ -55,7 +55,7 @@
 
 ![tab_new.png](screenshots_lab03%2Ftab_new.png)
 
-以下の画面で、検索窓に`hort`と入れると、「HortonworksSchemaRegistry」が絞り込み表示されます。<br>
+以下の画面が表示されます。検索窓に`hort`と入れると、「HortonworksSchemaRegistry」が絞り込み表示されます。<br>
 この状態で、「ADD」をクリックします。
 
 ![horton.png](screenshots_lab03%2Fhorton.png)
