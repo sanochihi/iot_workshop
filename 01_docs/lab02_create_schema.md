@@ -62,11 +62,6 @@ Cloudera プラットフォームの中で、そうした「データ構造の�
       "type": "string"
     },
     {
-      "name": "is_healthy",
-      "doc": "Flag indicating health (healthy == 1)",
-      "type": "int"
-    },
-    {
     "name": "door_closed",
     "doc": "1:closed, 0:open",
     "type": "int"
